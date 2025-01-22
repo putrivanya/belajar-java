@@ -1,0 +1,22 @@
+package com.belajar;
+
+import java.util.Scanner;
+
+public class Latihan2Pakroni {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan umur Anda: ");
+        int umur = scanner.nextInt();
+
+        if (umur < 18) {
+            System.out.println("Anda masih remaja.");
+        } else if (umur <= 60) {
+            System.out.println("Anda seorang dewasa.");
+        } else {
+            System.out.println("Anda seorang lansia.");
+        }
+
+        scanner.close(); // Menutup scanner untuk mencegah kebocoran memori
+    }
+}
